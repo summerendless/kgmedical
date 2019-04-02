@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <script src ="js/jquery-3.3.1.min.js"></script>
+  <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <title>Document</title>
+  <script>
+	$(function(){
+		$(".main-visual-list").bxSlider({auto:true});
+	});
+
+	$(document).ready(function(){
+		//$("ul.sub").hide();
+			//$("#main_lnb>ul>li").hover(function(){
+				//var i = $(this).index();
+				//$("#main_lnb>ul>li>ul").eq(i).stop().slideDown();
+			//},function(){
+				//$("ul.sub").stop().slideUp();
+			//});
+			
+			 $("ul.sub").hide();
+			 $("#main_lnb>ul>li").hover(function(){
+			 var i = $(this).index();
+			 $("#main_lnb>ul>li>ul").eq(i).stop().slideDown();
+			 $("ul.sub").stop().slideDown();
+			 },function(){
+				$("ul.sub").stop().slideUp();
+			});
+		});
+  </script>
+ </head>
+ <body>
+  <div id="wrap">
+		<header id="wrap_header">
+			<p class="skip-menu"><a href="#">본문바로가기</a></p>
+			<div class="header">
+				<div class="main_header ">
+					<h1 id="logo"><a href="#"><img src="img/common/ci_logo.png" alt="KG"></a></h1>
+					<div id="main_lnb">
+						<ul id="nav">
+							<li>
+								<a href="#">그룹소개</a>
+									<ul class="sub">
+										<li><a href="#">인사말</a></li>
+										<li><a href="#">경영철학</a></li>
+										<li><a href="#">연혁</a></li>
+										<li><a href="#">오시는길</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="#">사업영역</a>
+									<ul class="sub">
+										<li><a href="#">화학</a></li>
+										<li><a href="#">친환경/에너지</a></li>
+										<li><a href="#">IT</a></li>
+										<li><a href="#">컨설팅</a></li>
+										<li><a href="#">교육</a></li>
+										<li><a href="#">레저</a></li>
+										<li><a href="#">F&amp;B</a></li>
+										<li><a href="#">미디어</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="#">사회공헌</a>
+									<ul class="sub">
+										<li><a href="#">사회공헌 철학</a></li>
+										<li><a href="#">사회공헌 활동</a></li>
+										<li><a href="#">선현재단</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="#">홍보센터</a>
+									<ul class="sub">
+										<li><a href="#">KG뉴스</a></li>
+										<li><a href="#">홍보자료</a></li>
+										<li><a href="#">페이스북</a></li>
+									</ul>
+							</li>
+							<li>
+								<a href="#">인재채용</a>
+									<ul class="sub">
+										<li><a href="#">KG인재상</a></li>
+										<li><a href="#">채용제도</a></li>
+										<li><a href="#">채용공고</a></li>
+									</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="main-visual">
+								<ul class="main-visual-list">
+									<li>
+										<a href="#"><img src="img/common/main_visual_01.png" alt="bridge"></a>
+										<div class="textArea">
+											<h2>thinK Great</h2>
+											<p>존경받는 기업, 자랑스런 회사</p>
+											<p>a respected company, a proud company</p>
+										</div>
+									</li>
+									<li>
+										<a href="#"><img src="img/common/main_visual_02.png" alt="cloud"></a>
+										<div class="textArea">
+											<h2>thinK Great</h2>
+											<p>존경받는 기업, 자랑스런 회사</p>
+											<p>a respected company, a proud company</p>
+										</div>
+									</li>
+									<li>
+										<a href="#"><img src="img/common/main_visual_03.png" alt="building"></a>
+										<div class="textArea">
+											<h2>thinK Great</h2>
+											<p>존경받는 기업, 자랑스런 회사</p>
+											<p>a respected company, a proud company</p>
+										</div>
+									</li>
+								</ul>
+				</div>
+			</div>
+		</header>
+		<div id="container">
+			<div id="bsSection">
+				<div class="title">
+				<h3>사업영역</h3>
+				</div>
+				<div class="content1">
+					<div class="bsAreaWrap">
+						<div class="bsListWrap">
+							<ul class="bsList">
+								<li class="bs-1">
+									<a href="#"> <!-- <img src="img/common/bs_img_01.png" alt=""> -->
+									<p>화학</p>
+									<p>친환경 소재와 Solution 제공<br>인류의 건강을 증진, 지구의 환경을 보호</p>
+									</a>
+									<a href="#"><span>more +</span></a>
+								</li>
+								<li class="bs-2">
+									<a href="#"><!-- <img src="img/common/bs_img_01.png" alt=""> -->
+									<p>IT</p>
+									<p>대한민국 대표 통합 결제플랫폼<br>온라인결제 POS 휴대폰결제</p>
+									</a>
+									<a href="#"><span>more +</span></a>
+								</li>
+								<li class="bs-3">
+										<a href="#"><!-- <img src="img/common/bs_img_01.png" alt=""> -->
+										<p>컨설팅 서비스</p>
+										<p>IT인프라 및 솔루션 제안,설계,구축<br>운영 등의 전문 컨설팅</p>
+										</a>
+									<a href="#"><span>more +</span></a>
+								</li>
+								<li class="bs-4">
+									<a href="#"><!-- <img src="img/common/bs_img_01.png" alt=""> -->
+									<p>친환경 에너지</p>
+									<p>최고의 친환경 재생에너지<br>바이오 에너지 전문기업</p>
+									</a>
+									<a href="#"><span>more +</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="htSection">
+				<div class="title">
+					<h3><span>KG</span> HISTORY</h3>
+				</div>
+				<div class="content2">
+					<ul>
+							<li class="ht-1">
+								<div class="card">
+									<div class="card-body">
+										<h3 class="card_title">KG이니시스, 업계 최초<br>가맹점 온라인 신청 시스템 런칭</h3>
+										<a href="#"><p class="card-text">KG이니시스 가맹점이라면 언제 어디서나 쉽고 간편하게 <br>서비스 추가 및 변경신청이 가능하며 이용방법 역시 간단해졌습니다. <br>가맹점 관리자페이지에 접속하여 약관 동의 후 서비스를 신청하면...</p></a>
+										<!-- <a href="#"><span>more +</span></a> -->
+										
+									</div>
+								</div>
+							</li>
+							<li class="ht-2">
+								<div class="card">
+									<img src="img/common/news-1.png" alt="btn">
+									<div class="card-body">
+										<h3 class="card_title">KG-한국자산평가 MOU 체결</h3>
+										<p>2020. 03.12</p>
+										<p class="card-text">KG제로인이 한국자산평가와 업무제휴를<br>갖고, 양사의 경쟁력을 강화<br>이번 제휴로 KG제로인과 한국자산평가는<br>신규 상품 공동개발을 통해<br>매출증대와 시장 지배력 강화에 크게<br>도움이 될 것이라는...</p>
+										<a href="#"><span>more +</span></a>
+									</div>
+								</div>
+							</li>
+							<li class="ht-3">
+								<div class="card">
+										<img src="img/common/news-2.png" alt="btn">
+										<div class="card-body">
+										<h3 class="card_title">이데일리 세계전략포럼 폐회</h3>
+										<p>2020. 03.17</p>
+										<p class="card-text">인간과 로봇이 친구가 되고, <br>스스로 주행하는 자동차를 탈 수 있는 세상, <br>현실이 아닌 가상공간에 발을 들여놓고, <br>모든 사물이 인터넷으로 연결되는 세상, <br>바로 4차 산업혁명이 인도하는 미래 인데요.<br>이번 포럼에서는 1,500여명이 참석하여..</p>
+										<a href="#"><span>more +</span></a>
+									</div>
+								</div>
+							</li>
+					</ul>
+				</div>
+			</div>
+			<div id="nsSection">
+				<div class="title">
+					<h3>NEWS</h3>
+				</div>
+				<div class="content3">
+						<div class="ns">
+							<img src="img/common/ns-1.png" alt="">
+							<p>KG그룹은 16일 올해 흑자전환을 위한 <br>대대적 사업재편을 단행중임을 밝히고 수익<br>개선에 대한 청사진을 제시했다.</p>
+						</div>
+						<div class="ns">
+							<img src="img/common/ns-2.png" alt="">
+							<p>KG그룹은 16일 올해 흑자전환을 위한 <br>대대적 사업재편을 단행중임을 밝히고 수익<br>개선에 대한 청사진을 제시했다.</p>
+						</div>
+						<div class="ns">
+							<img src="img/common/ns-3.png" alt="">
+							<p>KG그룹은 16일 올해 흑자전환을 위한 <br>대대적 사업재편을 단행중임을 밝히고 수익<br>개선에 대한 청사진을 제시했다.</p>
+						</div>
+						<div class="ns">
+							<img src="img/common/ns-4.png" alt="">
+							<p>KG그룹은 16일 올해 흑자전환을 위한 <br>대대적 사업재편을 단행중임을 밝히고 수익<br>개선에 대한 청사진을 제시했다.</p>
+						</div>
+						<img src="img/common/news-01.png" alt="">
+				</div>
+			</div>
+
+		</div>
+		<footer id="footer">
+			<div class="footer_wrap">
+				<h5><img src="img/common/footer_logo.png" alt=""></h5>
+				<div class="footer-center">
+					<div class="footer-lnb">
+							<ul>
+								<li>
+									<a href="#">회사소개</a>
+								</li>
+								<li>
+									<span></span>
+									<a href="#">이용약관</a>
+								</li>
+								<li>
+									<span></span>
+									<a href="#">개인정보처리방침</a>
+								</li>
+								<li>
+									<span></span>
+									<a href="#">찾아오시는길</a>
+								</li>
+							</ul>
+					</div>
+					<div class="copyright">
+							<P>서울특별시 중구 통일로 92, KG타워</P>
+							<p>COPYRIGHT &copy; BY KG GROUP. ALL RIGHT RESERVED</p>
+					</div>
+				</div>
+				<div class="footer-right">
+					<select class="selectbox" title="Family Site">
+						<option value title="새창으로 열림 Family Site">Family Site</option>
+						<option value="http://www.kgchem.co.kr/main/main.php" title="새창으로 열림 KG케미칼">KG 케미칼</option>
+					</select>
+				</div>
+			</div>
+		</footer>
+  </div>
+ </body>
+</html>
